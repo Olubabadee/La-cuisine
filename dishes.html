@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Doe | Restuarant</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilities.css" />
+  </head>
+  <body>
+    <!-- Nav -->
+    <div class="menu-btn">
+      <i class="fas fa-bars fa-2x"></i>
+    </div>
+    <!-- Nav -->
+    <div class="general">
+      <header class="nav">
+        <div class="container flex">
+          <h1 class="logo greatvalue">La-Cuisine</h1>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dishes.html">Our Dishes</a></li>
+            <li><a href="index.html">Pricing</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+          <button class="btn btn-outline">Reservation</button>
+        </div>
+      </header>
+
+      <!-- First Section  -->
+      <section class="features-head py-3">
+        <div class="container grid">
+          <div>
+            <h1 class="lg text-primary">Eponkukor-Special</h1>
+            <p class="text-primary">
+              Check out our best seller dish with over 1 thousand orders
+              successfully delivered nationwide
+            </p>
+          </div>
+          <img
+            src="img/Isi-Ewu-recipe-Picture-removebg-preview-removebg-preview.png"
+            alt=""
+          />
+        </div>
+      </section>
+    </div>
+
+    <!-- The Restuarant  -->
+    <section class="drestaurant my-2">
+      <div class="container">
+        <div class="top">
+          <h1 class="text-center bold">THE RESTUARANT</h1>
+          <p class="lead text-center">
+            A little about the dishes we serve to make your life better
+          </p>
+          <center><hr class="h-line" color="#e6c50c" /></center>
+        </div>
+        <div class="menus grid">
+          <div class="foods">
+            <img
+              src="img/chole-chickpea-curry-1957946-hero-01-cddf957cc78d4032ba29ec2adbc05a97.jpg"
+              alt=""
+            />
+            <img src="img/at-uz-hledate-misto-na.jpg" alt="" />
+            <img src="img/restaurant-939435_960_720.jpg" alt="" />
+          </div>
+          <div class="writeup">
+            <p class="spaced notoppadding">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Distinctio, aliquid omnis quos nesciunt praesentium beatae facilis
+              deserunt ratione ipsam. Adipisci exercitationem sapiente
+              distinctio incidunt minima autem dolorum. Animi alias sapiente,
+              officia ratione, hic pariatur beatae nam vel natus nostrum harum!
+            </p>
+            <p class="spaced">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci
+              repellendus, minima nesciunt veniam perferendis cum.
+            </p>
+            <p class="greatvalue spaced">Dave Dee Don</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <h3 class="stats-heading my-2 text-center">
+          We Serve the best sumptious dishes for your pleasure
+        </h3>
+        <center><hr class="h-line" color="#e6c50c" /></center>
+        <div class="grid grid-4 text-center">
+          <div>
+            <i class="fas fa-cutlery fa-2x"> </i>
+            <h2>10,000</h2>
+            <p class="text-secondary">Orders Placed</p>
+          </div>
+          <div>
+            <i class="fas fa-spoon fa-2x"> </i>
+            <h2>290,000</h2>
+            <p class="text-secondary">Dishes Served</p>
+          </div>
+          <div>
+            <i class="fas fa-handshake fa-2x"> </i>
+            <h2>50,000</h2>
+            <p class="text-secondary">Satisfied Customers</p>
+          </div>
+          <div>
+            <i class="fas fa-comment fa-2x"> </i>
+            <h2>50,000</h2>
+            <p class="text-secondary">Pleasant Review</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+      <div class="container grid grid-3">
+        <div class="index">
+          <h1 class="greatvalue">La-Cuisine</h1>
+          <p>Copyright &copy; 2022</p>
+        </div>
+        <nav class="index">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="features.html">Features</a></li>
+            <li><a href="docs.html">Docs</a></li>
+          </ul>
+        </nav>
+        <div class="social index">
+          <div>
+            <ul>
+              <li><i class="fas fa-location fa-1x"></i> Washington DC</li>
+              <li><i class="fab fa-github fa-1x"></i> + 0145 5343</li>
+              <li><i class="fab fa-google fa-1x"></i> johndoe@lacuisine.com</li>
+            </ul>
+          </div>
+          <div>
+            <a href="#"><i class="fab fa-github fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i> </a>
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document
+        .querySelector(".menu-btn")
+        .addEventListener("click", () =>
+          document.querySelector(".nav-menu").classList.toggle("show")
+        );
+    </script>
+  </body>
+</html>

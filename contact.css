@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap");
+
+/* Base Styles  */
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  color: #333;
+  line-height: 1.5;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background: url("img/photo-1600891964599-f61ba0e24092.jfif") no-repeat
+    top/cover;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+/* -------------------------- */
+/* CLASSES TO MAKE MODAL WORK */
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.3);
+  z-index: 10;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* background-color: linear-gradient(to top left, #28b487, #7dd56f); */
+  /* background: linear-gradient(
+    to bottom,
+    rgba(245, 246, 252, 0.6),
+    rgba(117, 19, 93, 0.6),
+    url("img/photo-1600891964599-f61ba0e24092.jfif")
+  ); */
+  backdrop-filter: blur(3px);
+  z-index: 5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  border: none;
+}
+.grid .box1 h2,
+.grid .box1 p {
+  padding-bottom: 10px;
+}
+.grid .box1 {
+  background-color: #665703;
+  padding: 4rem;
+  color: white;
+  border: none;
+  font-size: 14px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.grid .box1 ul li {
+  padding-bottom: 20px;
+}
+
+.grid .box1 ul li p {
+  display: inline;
+}
+.grid .box1 ul li .ind {
+  padding-left: 20px;
+}
+.grid .box1 ul li i {
+  padding-right: 20px;
+}
+
+.grid .box2 {
+  background-color: white;
+  padding: 4rem;
+  color: black;
+  border: none;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.grid .box2 input,
+.grid .box2 textarea {
+  width: 100%;
+  border: none;
+  padding: 10px 5px;
+  border-bottom: #665703 2px solid;
+  padding: 10px 5px;
+}
+
+.grid .box2 label {
+  font-size: 12px;
+}
+.grid .box2 div {
+  padding: 10px 0px;
+}
+.grid .box2 textarea {
+  max-height: 100px;
+}
+
+button {
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: #665703;
+  color: white;
+}
+
+@media (max-width: 1500px) {
+  .grid {
+    grid-template-columns: 45% 55%;
+  }
+}
+@media (max-width: 1200px) {
+  .grid .box1,
+  .grid .box2 {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 958px) {
+  body {
+    height: 150vh;
+  }
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .grid .box1 {
+    border-bottom-left-radius: 0px;
+  }
+} ;
